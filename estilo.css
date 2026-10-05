@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteiner{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+                         "header header"
+                         "sidebar main"
+                         "footer footer";
+}
+
+header{
+    background:#483D8B;
+    grid-area: header;
+    color: #228B22;
+    padding: 1rem;
+    
+}
+
+aside{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    background: #483D8B;
+    grid-area: sidebar;
+    padding: 1rem;
+
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfJz4jT229aC85F484IfHMJWzZ2tBdao_MTD8i41dVug&s=10');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+
+}
+
+main{
+    grid-area: main;
+    padding: 1rem;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMRp_WdzkdUJa0bUX3MrMaYf7rG9U6eUtBx1vubA8QFw&s=10');
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+}
+
+footer{
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+p{
+    color: #6495ED;
+    text-align: center;
+}
+
+header,h1{
+    text-align: center;
+    
+}
+
+h1{
+    text-align: center;
+    color: #DAA520;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+aside,nav,ul{
+    text-decoration: none;
+}
+
+h2{
+    color: #FFD700;
+}
+
+.carrusel {
+
+    max-width: 600px;
+    margin: 20px auto 10px auto;
+    overflow: hidden; /* Oculta lo que sale del contenedor */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 100%;
+}
+
+
+
